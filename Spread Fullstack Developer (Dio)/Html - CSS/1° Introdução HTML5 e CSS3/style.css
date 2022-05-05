@@ -2,7 +2,7 @@ body {
     background-color: #f5f5f5;
     font-family: Verdana;
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto; 
 }
 
 .topo{
@@ -12,6 +12,8 @@ body {
 
 .photo{
     border-radius: 50%;
+    width: 35%;
+    margin-top: 25px;
     border-top: 1px solid black;
 }
 
@@ -20,7 +22,7 @@ body {
 }
 
 #title{
-    font-size: 40px;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
@@ -56,12 +58,13 @@ a {
     width: 100%;
 }
 
+footer{
+    text-align: center;
+    margin-top: 15px;
+}
+
 .contats_list{
     list-style: none;
-    padding-left: 1px;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
 }
 
 .contats_list li a {
