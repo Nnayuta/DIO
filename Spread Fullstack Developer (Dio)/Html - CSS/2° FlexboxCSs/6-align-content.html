@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+    <style>
+        .container {
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item {
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is therefore from repetition, injected humour, or non-characteristic</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <div style="
+    position: fixed;
+    right: 0;
+    top: 0;
+    border: 2px solid black; 
+    width: 400px;
+    padding: 10px;
+    margin: 5px;
+    ">
+        <h1 style="text-align: center;">Align content</h1>
+        <p style="text-align: justify;">
+            É a propiedade responsável por tratar o alinhamento das linhas do container em relação ao eixo vertical
+            do container.
+        <p>Precisamos que:</p>
+        <ul>
+            <li>O container utilize quebra de linhas
+                <p>* Precisa que o cantainer tenha flex-wrap com model wrap</p>
+            </li>
+            <li>A altura do container seja maior que a soma das linhas dos itens</li>
+        </ul>
+        </p>
+        <p>
+        <h2 style="text-align: center;">Tipos de Alinhamento</h1>
+            <ul>
+                <li>
+                    <p>center: alinhamento dos itens ao centro.</p>
+                </li>
+                <li>
+                    <p>stretch: padrão, e os flex itens crescem igualmente.</p>
+                </li>
+                <li>
+                    <p>flex-start: alinhamento dos itens no início</p>
+                </li>
+                <li>
+                    <p>flex-end: alinhamento dos itens no final</p>
+                </li>
+                <li>
+                    <p>space-between: cria um espaçamento igual entre os elementos</p>
+                </li>
+                <li>
+                    <p>space-around: os espaçamentos do meio são duas vezes maior que o inicial e final</p>
+                </li>
+            </ul>
+            </p>
+    </div>
+</body>
+
+</html>

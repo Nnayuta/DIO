@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .items{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .items{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>row</h1>
+    <p>center</p>
+    <section class="container center">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">Item 3 com mais alguns texts</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing;</div>
+        <div class="items">Item 3 com mais alguns texts</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing</div>
+        <div class="items">Item 3 com mais alguns texts</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing</div>
+        <div class="items">Item 3 com mais alguns texts</div>
+    </section>
+
+
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="items"><br> 1</div>
+        <div class="items">Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing</div>
+        <div class="items">Item 3 com mais alguns texts</div>
+    </section>
+
+    <h1>column</h1>
+
+    <p>flex-start</p>
+    <section class="container start column">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing</div>
+        <div class="items">Item 3 com mais alguns texts</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end column">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing</div>
+        <div class="items">Item 3 com mais alguns texts</div>
+    </section>
+
+    <p>center</p>
+    <section class="container center column">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">Item 3 com mais alguns texts</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline column">
+        <div class="items"><br> 1</div>
+        <div class="items">Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing</div>
+        <div class="items">Item 3 com mais alguns texts</div>
+    </section>
+
+    <p>alinhamento central à tela</p>
+    <section class="container central center">
+        <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </section>
+
+
+    <div
+    style="
+    position: fixed;
+    right: 0;
+    top: 0;
+    border: 2px solid black; 
+    width: 400px;
+    padding: 10px;
+    margin: 5px;
+    ">
+        <h1 style="text-align: center;">Align Items</h1>
+        <p style="text-align: justify;">
+            Trata do alinhamento dos flex itens de acordo com o eixo do container.
+            O alinhamento é diferente para quando os itens estão em colunas ou linhas.
+            Permite o alinhamento central no eixo vertical
+        </p>
+        <p>
+            <h2 style="text-align: center;">Tipos de Alinhamento</h1>
+                <ul>
+                    <li><p>center: alinhamento dos itens ao centro</p></li>
+                    <li><p>stretch: padrão, e os flex itens cresçam igualmente</p></li>
+                    <li><p>flex-start: alinhamento dos itens no início</p></li>
+                    <li><p>flex-start: alinhamento dos itens no início</p></li>
+                    <li><p>flex-end: alinhamento dos itens no final</p></li>
+                    <li><p>baseline: alinhamento de acordo com a linha base da tipografia dos itens</p></li>
+                </ul>
+        </p>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
