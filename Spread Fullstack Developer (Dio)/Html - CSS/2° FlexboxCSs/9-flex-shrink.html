@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex shrink</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            background-color: orangered;
+            margin: 5px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .s-1 {
+            flex-shrink: 1;
+        }
+
+        .fg-1 {
+            flex-grow: 1;
+        }
+
+        .s-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>flex-shrink: 1</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">F</div>
+    </div>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">Lorem, ipsum dolor</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">F</div>
+    </div>
+
+    <p>flex-shrink: 0 / basis: 100px</p>
+    <div class="flex-container">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">B ipsum</div>
+        <div class="item s-0 fg-1">C dolordolor</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">F</div>
+    </div>
+
+    <div style="position: fixed;right: 0;bottom: 0;border: 2px solid black; width: 400px;padding: 10px;margin: 5px;">
+        <h1 style="text-align: center;">Flex shrink</h1>
+        <p style="text-align: justify;">
+            É a propriedade que estabeleceracapacidade de redução ou compressão do tamanho de um item.
+        </p>
+    </div>
+</body>
+
+</html>
