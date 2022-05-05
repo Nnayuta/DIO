@@ -1,6 +1,3 @@
-# Bootcamps DIO
-Repositorio para Armazenar os projetos feitos nos Bootcamps da [DIO](https://dio.me/).
-
 ## Curso: "Posicionando elementos com Flexbox em CSS"
 Objetivo do Curso:
 * Fundamentos e aplicações das propriedades flexbox na criação de layouts responsivos.
