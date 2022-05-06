@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    height: 60%;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone img {
+    height: 50rem;
+}
+
+/* --------------------- */
+
+.apps {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apps img {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 145px;
+}
+
+.Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #0000002d;
+    background-color: #fff;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.loginForm {
+    flex-direction: column;
+    display: flex;
+}
+
+.formContainer {
+    min-width: 350px;
+    max-height: 396px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login .Logo {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.login .login img {
+    width: 100%;
+    height: 100%;
+}
+
+.loginFormInput {
+    display: flex;
+    margin: 3px 0;
+    width: 100%;
+    max-width: 268px;
+    max-height: 38px;
+}
+
+.containerName {
+    align-items: center;
+    background: rgba(var(--b3f, 250, 250, 250), 1);
+    border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
+    color: rgba(var(--i1d, 38, 38, 38), 1);
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+}
+
+.loginFormInput label {
+    display: flex;
+    flex: 1 0 0;
+    height: 36px;
+    min-width: 0;
+    position: relative;
+}
+
+.loginFormInput span {
+    font-size: 12px;
+    height: 36px;
+    left: 8px;
+    line-height: 36px;
+    overflow: hidden;
+    pointer-events: none;
+    position: relative;
+    right: 0;
+    text-overflow: ellipsis;
+}
+
+.loginFormInput input {
+    border: none;
+    flex: 1 0 auto;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+    background-color: #fafafa;
+}
+
+.loginForm button{
+
+    /* background-color: rgba(var(--d69,0,149,246),1); Enabled*/
+    background-color:  rgba(var(--d69,0,149,246),.3);
+    width: 100%;
+    height: 100%;
+    min-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.ContainerOR {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+.ContainerOR span {
+    margin: 20px;
+}
+
+.ContainerOR::before {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: #c7c7c7;
+}
+
+.ContainerOR::after {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: #c7c7c7;
+}
+
+.facebookLogin {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.facebookLogin a{
+    color: #385185;
+    display: flex;
+    align-items: center;
+}
+
+.facebookLogin img {
+    width: 19px;
+}
+
+.Forgotpass{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #00377b;
+}
+
+.Cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #0000002d;
+    background-color: #fff;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+@media(max-width: 768px) {
+    .phone {
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+
+    .Login {
+        border: none;
+        padding: 0px 0px;
+        background-color: transparent;
+    }
+
+    .Cadastro{
+        border: none;
+        padding: 0px 0px;
+        background-color: transparent;
+    }
+    
+    .loginFormInput{
+        max-width: 100%;
+    }
+
+}
