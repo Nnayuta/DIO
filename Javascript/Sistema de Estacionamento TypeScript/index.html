@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento</title>
+    <style>
+        table {
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="Nome" placeholder="Digite o nome do veiculo: " autocomplete="off">
+        <input type="text" id="Placa" placeholder="Digite a placa do veiculo: ">
+
+        <button id="Cadastrar">Cadastrar</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Placa</th>
+                <th>Entrada</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="patio">
+
+        </tbody>
+    </table>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
