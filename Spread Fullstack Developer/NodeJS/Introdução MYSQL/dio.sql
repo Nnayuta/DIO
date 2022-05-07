@@ -17,7 +17,7 @@ SELECT nome FROM pessoa; -- Selecionar apenas o nome
 
 -- "Atualiza/Alterar" dados na tabela
 UPDATE pessoa SET nome = 'Nayuta' -- Atualiza todas as informações de nome para Nayuta
-UPDATE pessoa SET nome = 'Nayuta Dantas' WHERE id = 1; -- Atualizar o nome de uma pessoa
+UPDATE pessoa SET nome = 'Nayuta Nayuta' WHERE id = 1; -- Atualizar o nome de uma pessoa
 
 -- Deletar dados na tabela
 SELECT * FROM pessoa WHERE id = 1; --  --Boa Pratica ao deletar dados: Verificar se é o usuario que deseja deletar
