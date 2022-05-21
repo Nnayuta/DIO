@@ -1,27 +1,35 @@
-import React, { Fragment } from "react";
+import React, { Component } from 'react';
+import Counter from './Counter';
 
-const store = ['a', 'b', 'c']
+const Buttons = ({ increment, decrement, count }) => (
+    <div>
+        <div>Valor atual: {count}</div>
+        <div>
+            <button onClick={increment}>Adicionar 1</button>
+        </div>
+        <div>
+            <button onClick={decrement}>Remover 1</button>
+        </div>
+    </div>
+)
 
-function Column({ type }) {
-    return (
-        <tr>
-            <td>{console.log}</td>
-        </tr>
-    )
+class App extends Component {
+    render() {
+        return (
+            <div>
+                <h1>Hello World!</h1>
+                <Counter render={
+                    ({ increment, decrement, count }) => (
+                        <Buttons
+                            increment={increment}
+                            decrement={decrement}
+                            count={count}
+                        />
+                    )
+                } />
+            </div>
+        );
+    }
 }
 
-function App() {
-    const renderColumns = (element, key) => (
-        <Fragment key={`column-${key}`}>
-            <Column type={element} />
-        </Fragment>
-    )
-
-    return (
-        <table>
-            {store.map(renderColumns)}
-        </table>
-    )
-}
-
-export default App
+export default App;
